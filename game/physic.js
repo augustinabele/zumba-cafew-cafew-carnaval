@@ -14,5 +14,16 @@ function update()
         player1.decelerate(moveDistance);
 
     player1.move();
+
+    // Super artificial inteligence
+    // if (ennemy.graphic.position.x > player1.graphic.position.x && ennemy.graphic.position.y > player1.graphic.position.y) {
+    //     ennemy.decelerate(moveDistance);
+    // } else {
+    //     ennemy.accelerate(moveDistance);
+    //     ennemy.turnLeft(rotateAngle);
+    // }
+    ennemy.turnLeft(rotateAngle);
+    ennemy.move();
+
     controls.update();
 }
